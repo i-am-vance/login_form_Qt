@@ -17,3 +17,15 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_checkBox_show_password_clicked(bool checked)
+{
+    if (checked == true)
+    {
+        ui->lineEdit_password->setEchoMode(QLineEdit::Normal);
+    }
+    else
+    {
+        ui->lineEdit_password->setEchoMode(QLineEdit::Password);
+    }
+}
