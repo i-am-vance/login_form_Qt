@@ -6,6 +6,11 @@ MainWindow::MainWindow(QWidget *parent) :
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+
+    ui->lineEdit_username->setMaxLength(15);
+    ui->lineEdit_username->setMaxLength(15);
+
+
 }
 
 MainWindow::~MainWindow()
