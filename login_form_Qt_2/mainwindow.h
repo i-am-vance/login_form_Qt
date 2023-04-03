@@ -23,6 +23,7 @@ private:
 
 private slots:
     void activation_button();
+    void on_pushButton_Login_clicked();
 };
 
 #endif // MAINWINDOW_H

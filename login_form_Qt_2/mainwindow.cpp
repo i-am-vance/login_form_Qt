@@ -48,3 +48,18 @@ void MainWindow::activation_button()
         ui->pushButton_Login->setEnabled(false);
     }
 }
+
+void MainWindow::on_pushButton_Login_clicked()
+{
+    QString username = ui->lineEdit_username->text();
+    QString password = ui->lineEdit_password->text();
+
+    if (username == "test" && password == "1234")
+    {
+        QMessageBox::information(this, "Login", "password and username correct");
+    }
+    else
+    {
+        QMessageBox::warning(this, "warning", "incorrect username and password");
+    }
+}
