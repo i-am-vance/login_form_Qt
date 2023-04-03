@@ -8,9 +8,9 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     ui->lineEdit_username->setMaxLength(15);
-    ui->lineEdit_username->setMaxLength(15);
+    ui->lineEdit_password->setMaxLength(15);
 
-
+    ui->lineEdit_password->setEchoMode(QLineEdit::Password);
 }
 
 MainWindow::~MainWindow()
