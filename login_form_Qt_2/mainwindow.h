@@ -20,6 +20,9 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void activation_button();
 };
 
 #endif // MAINWINDOW_H

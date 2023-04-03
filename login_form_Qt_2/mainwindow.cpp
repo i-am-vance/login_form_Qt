@@ -13,6 +13,10 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->lineEdit_password->setEchoMode(QLineEdit::Password);
 
     ui->pushButton_Login->setEnabled(false);
+
+    connect(ui->lineEdit_username, &QLineEdit::textChanged, this, &MainWindow::activation_button)&&
+            connect();
+
 }
 
 MainWindow::~MainWindow()
